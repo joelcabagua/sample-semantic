@@ -47,6 +47,6 @@ jobs:
       - name: Semantic release
         env:
           NPM_TOKEN: ${{ SECRETS.NPM_TOKEN }}
-          GITHUB_TOKEN: ${{ SECRETS.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ SECRETS.GH_TOKEN }}
           GIT_CREDENTIALS: "joelcabagua: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"
         run: yarn semantic-release
