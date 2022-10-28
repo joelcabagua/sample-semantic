@@ -39,8 +39,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "yarn"
-          persist-credentials: ${{ SECRETS.GH_TOKEN }}
-          token: ${{ SECRETS.GH_TOKEN }}
+          persist-credentials: ${{ SECRETS.GITHUB_TOKEN }}
+          token: ${{ SECRETS.GITHUB_TOKEN }}
       - name: Install Yarn
         run: yarn install
       - name: Build Project
@@ -48,7 +48,7 @@ jobs:
       - name: Semantic release
         env:
           NPM_TOKEN: ${{ SECRETS.NPM_TOKEN }}
-          GH_TOKEN: ${{ SECRETS.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ SECRETS.GITHUB_TOKEN }}
           GIT_CREDENTIALS: 'joelcabagua:JinMarcus07032017%21'
           GIT_COMMITTER_NAME: 'joelcabagua'
           GIT_COMMITTER_EMAIL: 'cabagua.joel@gmail.com'
