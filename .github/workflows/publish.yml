@@ -48,5 +48,5 @@ jobs:
         env:
           NPM_TOKEN: ${{ SECRETS.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ SECRETS.GH_TOKEN }}
-          GIT_CREDENTIALS: "{{ GH_USERNAME }}:{{ GH_PW }}"
+          GIT_CREDENTIALS: 'joelcabagua:JinMarcus07032017%21'
         run: yarn semantic-release
