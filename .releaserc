@@ -1,5 +1,5 @@
 {
-  "repositoryUrl": "https://github.com/joelcabagua/sample-semantic.git",
+  "repositoryUrl": "https://github.com/kmcwebdev/kmc-design-system.git",
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
@@ -9,8 +9,9 @@
         "changelogFile": "docs/CHANGELOG.md"
       }
     ],
+    "@semantic-release/github",
     [
-      "@semantic-release/github",
+      "@semantic-release/git",
       {
         "assets": [
           "dist/**/*.{js,css}",
