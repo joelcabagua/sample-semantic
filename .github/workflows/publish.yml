@@ -39,7 +39,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "yarn"
-          persist-credentials: false
+          persist-credentials: ${{ SECRETS.GH_TOKEN }}
       - name: Install Yarn
         run: yarn install
       - name: Build Project
