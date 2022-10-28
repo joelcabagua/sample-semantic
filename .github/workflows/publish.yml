@@ -50,4 +50,8 @@ jobs:
           NPM_TOKEN: ${{ SECRETS.NPM_TOKEN }}
           GH_TOKEN: ${{ SECRETS.GH_TOKEN }}
           GIT_CREDENTIALS: 'joelcabagua:JinMarcus07032017%21'
+          GIT_COMMITTER_NAME: 'joelcabagua'
+          GIT_COMMITTER_EMAIL: 'cabagua.joel@gmail.com'
+          GIT_AUTHOR_NAME: 'joelcabagua'
+          GIT_AUTHOR_EMAIL: 'cabagua.joel@gmail.com'
         run: yarn semantic-release
